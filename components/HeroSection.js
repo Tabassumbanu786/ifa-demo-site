@@ -20,7 +20,7 @@ const HeroSection = ({ ifaData }) => (
 
     <div className="md:w-1/2 mb-8 md:mb-0">
       <img
-        src="https://cdni.iconscout.com/illustration/premium/thumb/financial-advisor-3121234-2603892.png"
+        src="/assets/hero.png"
         alt="Financial Advisor Illustration"
         className="w-full max-w-md mx-auto"
       />
