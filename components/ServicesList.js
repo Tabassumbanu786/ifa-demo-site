@@ -3,7 +3,7 @@ const services = [
     icon: "🎯",
     title: "Goal-Based Financial Planning",
     description:
-      "Plan step-by-step for life’s big milestones — from your child’s education and wedding to your own comfortable retirement. I’ll help you define clear goals and build a plan to reach them stress-free.",
+      "Plan step-by-step for life&rsquo;s big milestones — from your child&rsquo;s education and wedding to your own comfortable retirement. I&rsquoll help you define clear goals and build a plan to reach them stress-free.",
   },
   {
     icon: "📈",
@@ -15,7 +15,7 @@ const services = [
     icon: "💰",
     title: "Tax Planning & Saving",
     description:
-      "Don’t let taxes eat into your income. I help you choose tax-saving investments and smart ways to reduce your tax burden legally and efficiently.",
+      "Don&rsquo;t let taxes eat into your income. I help you choose tax-saving investments and smart ways to reduce your tax burden legally and efficiently.",
   },
   {
     icon: "🔄",
@@ -27,7 +27,7 @@ const services = [
     icon: "🏝️",
     title: "Retirement Planning",
     description:
-      "Ensure a worry-free retirement with a steady income stream. I’ll help you calculate how much you need, plan your contributions, and select suitable funds to build a robust retirement corpus.",
+      "Ensure a worry-free retirement with a steady income stream. I&rsquoll help you calculate how much you need, plan your contributions, and select suitable funds to build a robust retirement corpus.",
   },
   {
     icon: "🛡️",
@@ -37,7 +37,7 @@ const services = [
   },
   {
     icon: "👶",
-    title: "Children’s Future Planning",
+    title: "Children&rsquo;s Future Planning",
     description:
       "Give your child the best possible start in life with dedicated investment plans for education and marriage expenses.",
   },
@@ -45,7 +45,7 @@ const services = [
     icon: "🚨",
     title: "Emergency Fund Setup",
     description:
-      "I’ll guide you to build an emergency fund so unexpected expenses never derail your goals.",
+      "I&rsquoll guide you to build an emergency fund so unexpected expenses never derail your goals.",
   },
 ];
 
@@ -81,7 +81,7 @@ const ServicesSection = () => (
 
       <div className="mt-12">
         <button className="bg-yellow-500 text-black px-6 py-3 rounded-xl text-base hover:bg-yellow-600 transition">
-          Not sure which plan fits you best? Let’s talk and create a personalised roadmap for your goals
+          Not sure which plan fits you best? Let&rsquo;s talk and create a personalised roadmap for your goals
         </button>
       </div>
     </div>

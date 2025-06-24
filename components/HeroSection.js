@@ -28,7 +28,7 @@ const HeroSection = ({ ifaData }) => (
           Helping you plan, grow, and protect your wealth — with honest advice and proven solutions.
         </p>
         <p className="text-gray-400 mb-6">
-          Hi, I’m {ifaData.name}, an AMFI-registered Mutual Fund Distributor with {ifaData.experience} years of experience in guiding families and professionals toward their financial goals.
+          Hi, I&rsquo;m {ifaData.name}, an AMFI-registered Mutual Fund Distributor with {ifaData.experience} years of experience in guiding families and professionals toward their financial goals.
         </p>
         <button className="bg-yellow-400 text-black px-6 py-3 rounded-xl font-medium hover:bg-yellow-500 transition shadow-lg">
           Book a Free Consultation
