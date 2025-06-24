@@ -56,8 +56,9 @@ const ServicesSection = () => (
         Our <span className="text-yellow-500">Services</span>
       </h2>
       <p className="text-md text-gray-500 max-w-2xl mx-auto mb-12">
-        Every individual and family is different — your goals, your income, and your dreams. That’s why my approach is personal and flexible. Here’s how I can support you on your financial journey:
-      </p>
+  Every individual and family is different — your goals, your income, and your dreams. That&rsquo;s why my approach is personal and flexible. Here&rsquo;s how I can support you on your financial journey:
+</p>
+
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {services.map((service, index) => (

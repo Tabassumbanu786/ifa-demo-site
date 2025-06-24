@@ -19,10 +19,11 @@ const ContactSection = ({ ifaData }) => {
 
         {/* Text Right */}
         <div>
-          <h2 className="text-3xl font-bold mb-4">Let’s Connect</h2>
-          <p className="text-gray-600 mb-6">
-            I’d love to help you get started on your investment journey. Reach out anytime — I’m just a message away.
-          </p>
+        <h2 className="text-3xl font-bold mb-4">Let&rsquo;s Connect</h2>
+        <p className="text-gray-600 mb-6">
+          I&rsquo;d love to help you get started on your investment journey. Reach out anytime — I&rsquo;m just a message away.
+        </p>
+
 
           <div className="text-lg space-y-3">
             <p>📞 <strong>Phone:</strong> {ifaData.phone}</p>
