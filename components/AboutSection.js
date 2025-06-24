@@ -1,51 +1,33 @@
-const AboutSection = ({ ifaData }) => (
-  <section id="about" className="py-20 bg-gradient-to-b from-gray-50 to-white">
-    <div className="max-w-6xl mx-auto bg-white shadow-xl rounded-xl p-10 grid md:grid-cols-3 gap-10 items-center">
-      
-      {/* Left Profile Column */}
-      <div className="text-center col-span-1">
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
-          alt={`Photo of ${ifaData.name}`}
-          className="w-40 h-40 mx-auto rounded-full shadow-lg border-4 border-purple-100 mb-4"
-        />
-        <h3 className="text-xl font-semibold text-gray-800">{ifaData.name}</h3>
-        <p className="text-sm text-gray-500">AMFI ARN: <strong>{ifaData.arn}</strong></p>
+import Image from "next/image";
+
+const AboutSection = () => (
+  <section id="about" className="bg-white">
+    <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 className="text-4xl font-extrabold text-gray-900 mb-4 uppercase">
+          About <span className="text-yellow-500">Us</span>
+        </h2>
+        <p className="text-md text-gray-700 mb-6">
+          Hi, I’m <strong>Ravi Shah</strong>, an AMFI-registered Mutual Fund Distributor with <strong>10+ years</strong> of experience. I’m passionate about helping families and professionals make smart investment decisions and build a secure future.
+        </p>
+        <p className="text-md text-gray-700 mb-6">
+          My approach is personalized — I listen to your goals and create tailored strategies using mutual funds, tax-saving instruments, and long-term planning tools.
+        </p>
+        <p className="text-md text-gray-700">
+          Whether you're planning for retirement, your child’s education, or setting up an emergency fund, I’ll be your trusted guide. When I’m not working with clients, I enjoy cricket and reading about financial strategies.
+        </p>
       </div>
-
-      {/* About Text Content */}
-      <div className="col-span-2 space-y-6">
-        <div>
-          <h2 className="text-3xl font-bold text-purple-800 mb-2">Meet {ifaData.name}</h2>
-          <p className="text-gray-700 leading-relaxed">
-            I’m {ifaData.name}, a passionate financial advisor with over <strong>{ifaData.experience}</strong> years helping individuals and families make smart money decisions. I believe in building trust through transparency and long-term relationships. Registered with AMFI <strong>{ifaData.arn}</strong>, I stay updated with the latest market trends to offer you the best possible guidance.
-          </p>
-        </div>
-
-        <div>
-          <h4 className="text-lg font-semibold text-gray-800">🎯 Mission</h4>
-          <p className="text-gray-700 italic">
-            Empower you to achieve financial freedom with simple, reliable investment solutions.
-          </p>
-        </div>
-
-        <div>
-          <h4 className="text-lg font-semibold text-gray-800">📜 Credentials</h4>
-          <p className="text-gray-700">AMFI Registered Mutual Fund Distributor</p>
-        </div>
-
-        {ifaData.hobby && (
-          <div>
-            <h4 className="text-lg font-semibold text-gray-800">💬 Personal Note</h4>
-            <p className="text-gray-700 italic">
-              Outside work, I enjoy {ifaData.hobby}, and I love working with clients who value clear, honest advice.
-            </p>
-          </div>
-        )}
+      <div className="relative">
+        <Image
+          src="/assets/about-illustration.png"
+          alt="About Illustration"
+          width={600}
+          height={600}
+          className="object-contain"
+        />
       </div>
     </div>
   </section>
 );
-
 
 export default AboutSection;

@@ -1,57 +1,86 @@
-// components/ServicesSection.js
-
 const services = [
   {
-    title: "🎯 Goal-Based Financial Planning",
-    description: "Plan for children’s education, marriage, or retirement.",
+    icon: "🎯",
+    title: "Goal-Based Financial Planning",
+    description:
+      "Plan step-by-step for life’s big milestones — from your child’s education and wedding to your own comfortable retirement. I’ll help you define clear goals and build a plan to reach them stress-free.",
   },
   {
-    title: "📊 Mutual Fund Investments",
-    description: "Curated SIPs and lump sum investments tailored to your goals.",
+    icon: "📈",
+    title: "Mutual Fund Investments",
+    description:
+      "Grow your wealth with carefully selected mutual funds. Whether you prefer SIPs or lump sum investments, I recommend the right mix based on your risk appetite and goals.",
   },
   {
-    title: "🧾 Tax Planning",
-    description: "Maximize savings through tax-efficient strategies.",
+    icon: "💰",
+    title: "Tax Planning & Saving",
+    description:
+      "Don’t let taxes eat into your income. I help you choose tax-saving investments and smart ways to reduce your tax burden legally and efficiently.",
   },
   {
-    title: "📈 Portfolio Review & Rebalancing",
-    description: "Periodic reviews to keep your investments on track.",
+    icon: "🔄",
+    title: "Portfolio Review & Rebalancing",
+    description:
+      "Markets change — and so should your investment plan. I provide periodic reviews to check if you’re on track, and rebalance your portfolio if needed to match your goals.",
+  },
+  {
+    icon: "🏝️",
+    title: "Retirement Planning",
+    description:
+      "Ensure a worry-free retirement with a steady income stream. I’ll help you calculate how much you need, plan your contributions, and select suitable funds to build a robust retirement corpus.",
+  },
+  {
+    icon: "🛡️",
+    title: "Insurance Planning",
+    description:
+      "Protect your family and assets with the right insurance — life cover, health cover, and critical illness plans that fit your situation and budget.",
+  },
+  {
+    icon: "👶",
+    title: "Children’s Future Planning",
+    description:
+      "Give your child the best possible start in life with dedicated investment plans for education and marriage expenses.",
+  },
+  {
+    icon: "🚨",
+    title: "Emergency Fund Setup",
+    description:
+      "I’ll guide you to build an emergency fund so unexpected expenses never derail your goals.",
   },
 ];
 
 const ServicesSection = () => (
-  <section id="services" className="relative py-20 bg-gray-50 overflow-hidden">
-    {/* Decorative Background Top Right */}
-    
-
-    {/* Decorative Wave Bottom Left (optional) */}
-    {/* <img
-      src="/bg-wave.png"
-      alt="Decorative Wave"
-      className="absolute bottom-0 left-0 w-48 md:w-64 opacity-60 pointer-events-none select-none"
-    /> */}
-
+  <section id="services" className="relative py-10 bg-white overflow-hidden">
     <div className="max-w-6xl mx-auto px-4 text-center relative z-10">
-      <h2 className="text-4xl font-extrabold text-gray-900 mb-4">Our Services</h2>
-      <p className="text-lg text-gray-600 mb-12">
-        Tailored financial advice to help you grow and protect your wealth.
+      <h2 className="text-4xl font-extrabold text-gray-900 mb-4 uppercase">
+        Our <span className="text-yellow-500">Services</span>
+      </h2>
+      <p className="text-md text-gray-500 max-w-2xl mx-auto mb-12">
+        Every individual and family is different — your goals, your income, and your dreams. That’s why my approach is personal and flexible. Here’s how I can support you on your financial journey:
       </p>
 
-      <div className="grid md:grid-cols-2 gap-6 text-left">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {services.map((service, index) => (
           <div
             key={index}
-            className="p-6 bg-white rounded-2xl shadow hover:shadow-md transition-shadow border border-gray-200"
+            className="bg-gray-50 rounded-xl border border-gray-200 p-6 shadow-md hover:shadow-lg transition duration-300"
           >
-            <h3 className="text-lg font-semibold mb-2 text-gray-800">{service.title}</h3>
-            <p className="text-gray-600">{service.description}</p>
+            <div className="w-16 h-16 mx-auto flex items-center justify-center bg-yellow-400 rounded-full mb-4 text-3xl">
+              {service.icon}
+            </div>
+            <h3 className="text-md font-bold text-gray-800 mb-2">
+              {service.title}
+            </h3>
+            <p className="text-sm text-gray-600">
+              {service.description}
+            </p>
           </div>
         ))}
       </div>
 
       <div className="mt-12">
-        <button className="bg-purple-700 text-white px-6 py-3 rounded-xl text-base hover:bg-purple-800 transition">
-          Not sure where to start? Let’s discuss your goals
+        <button className="bg-yellow-500 text-black px-6 py-3 rounded-xl text-base hover:bg-yellow-600 transition">
+          Not sure which plan fits you best? Let’s talk and create a personalised roadmap for your goals
         </button>
       </div>
     </div>

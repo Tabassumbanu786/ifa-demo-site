@@ -1,21 +1,18 @@
 import Link from "next/link";
 
-
 const Layout = ({ children }) => (
   <div className="min-h-screen bg-white text-gray-800 font-sans">
-    <header className="bg-purple-700 text-white py-4 px-6 md:px-12 shadow">
+    <header className="bg-yellow-400 text-gray-900 py-4 px-6 md:px-12 shadow">
       <div className="flex justify-between items-center">
-        <div className="text-xl font-semibold">IFA Website</div>
-  
+        <div className="text-xl font-bold tracking-wide">IFA Website</div>
 
-<nav className="space-x-6 text-sm font-medium">
-  <Link href="/" className="hover:underline">Home</Link>
-  <Link href="/services" className="hover:underline">Services</Link>
-  <Link href="/about" className="hover:underline">About Us</Link>
-  <Link href="/resources" className="hover:underline">Resources</Link>
-  <Link href="/contact" className="hover:underline">Contact Us</Link>
-</nav>
-
+        <nav className="space-x-6 text-sm font-semibold">
+          <Link href="/" className="hover:underline hover:text-gray-800">Home</Link>
+          <Link href="/#services" scroll={false} className="hover:underline hover:text-gray-800">Services</Link>
+          <Link href="/#about" scroll={false} className="hover:underline hover:text-gray-800">About Us</Link>
+          <Link href="/resources" className="hover:underline hover:text-gray-800">Resources</Link>
+          <Link href="#contact" className="hover:underline hover:text-gray-800">Contact Us</Link>
+        </nav>
       </div>
     </header>
 

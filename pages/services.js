@@ -5,11 +5,7 @@ import ServicesSection from "@/components/ServicesList";
 const ServicesPage = () => {
   return (
     <Layout>
-     <ServicesSection />
-        {/* <div className="mt-12">
-          
-        </div> */}
-      
+     <ServicesSection />      
     </Layout>
   );
 };
