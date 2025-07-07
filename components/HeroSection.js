@@ -12,7 +12,7 @@ const HeroSection = () => (
           Helping you plan, grow, and protect your wealth — with honest advice and proven solutions.
         </p>
         <p className="text-md text-gray-400 mb-6">
-          Hi, I’m Ravi Shah, an AMFI-registered Mutual Fund Distributor with 12 years of experience in guiding families and professionals toward their financial goals.
+          Hi, I’m Ravi Shah , an AMFI-registered Mutual Fund Distributor with 12 years of experience in guiding families and professionals toward their financial goals.
         </p>
         <button className="bg-yellow-400 text-black font-semibold px-6 py-3 rounded hover:bg-yellow-300 transition">
           Book a Free Consultation
