@@ -1,7 +1,9 @@
 import React from "react";
 import FinanceNews from "./FinanceNews"; // adjust path if needed
-import SipCalculator from "./SIpCalculator";
+
+
 import EmiCalculator from './EmiCalculator';
+import SipCalculator from "./SipCalculator";
 
 
 
