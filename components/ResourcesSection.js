@@ -3,7 +3,8 @@ import FinanceNews from "./FinanceNews"; // adjust path if needed
 
 
 import EmiCalculator from './EmiCalculator';
-import SipCalculator from "./SipCalculator";
+import SipSection from "./SipSection";
+ // ✅ same folder
 
 
 
@@ -52,7 +53,7 @@ export default function ResourcesSection() {
             Plan your SIPs, calculate EMIs — use our quick tools anytime.
           </p>
           <div className="mt-10 space-y-12">
-            <SipCalculator/>
+          <SipSection/>
            <EmiCalculator/>
           </div>
 
