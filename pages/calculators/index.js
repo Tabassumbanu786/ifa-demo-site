@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 
 const calculators = [
   {
@@ -24,7 +25,13 @@ export default function CalculatorsList() {
         {calculators.map((calc) => (
           <Link href={calc.link} key={calc.title}>
             <div className="border border-yellow-300 rounded-lg p-4 bg-white shadow-md hover:shadow-lg transition cursor-pointer max-w-[320px] mx-auto">
-              <img src={calc.image} alt={calc.title} className="h-48 max-w-full object-contain" />
+              <Image
+                src={calc.image}
+                alt={calc.title}
+                width={320}
+                height={192}
+                className="h-48 w-full object-contain"
+              />
               <div className="pt-2 pb-4">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-2">{calc.title}</h2>
                 <p className="text-base text-gray-600">{calc.description}</p>

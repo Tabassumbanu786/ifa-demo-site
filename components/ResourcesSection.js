@@ -1,6 +1,7 @@
 import React from "react";
 import FinanceNews from "./FinanceNews"; // adjust path if needed
 import SipCalculator from "./SIpCalculator";
+import EmiCalculator from './EmiCalculator';
 
 
 
@@ -50,7 +51,7 @@ export default function ResourcesSection() {
           </p>
           <div className="mt-10 space-y-12">
             <SipCalculator/>
-            <EmiCalculator />
+           <EmiCalculator/>
           </div>
 
         </div>
