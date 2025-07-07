@@ -5,3 +5,7 @@
 html {
   scroll-behavior: smooth;
 }
+/* styles/globals.css */
+.input {
+  @apply w-full mt-1 px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-yellow-400;
+}

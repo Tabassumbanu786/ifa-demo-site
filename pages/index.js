@@ -6,7 +6,7 @@ import AboutSection from "@/components/AboutSection";
 import ContactSection from "@/components/ContactSection";
 
 const ifaData = {
-  name: "Jane Smith",
+  name: "Ravi Shah",
   experience: 12,
 };
 
